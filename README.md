@@ -3,9 +3,7 @@ FloatTools — precision-focused float comparison and normalization for PHP. Des
 
 ## Description
 
-	FloatTools is a module for architecturally transparent handling of floating-point numbers in PHP. 
-  It addresses issues of comparison, rounding, normalization, and logging of float values—especially in edge-case logic. 
-  The module is designed for systems where predictability and control take precedence over speed.
+	FloatTools is a module for architecturally transparent handling of floating-point numbers in PHP. It addresses issues of comparison, rounding, normalization, and logging of float values—especially in edge-case logic. The module is designed for systems where predictability and control take precedence over speed.
 
 ## Features
 	• 	Comparison of float values with epsilon tolerance
@@ -62,8 +60,7 @@ FloatTools — precision-focused float comparison and normalization for PHP. Des
 	
 ## Author
 
-	Tetiana N. — architect of transparent PHP solutions. 
-  This module is part of a professional portfolio, focused on control, predictability, and architectural clarity.
+	Tetiana N. — architect of transparent PHP solutions. This module is part of a professional portfolio, focused on control, predictability, and architectural clarity.
 
 ## License
 	This project is licensed under the MIT License.
