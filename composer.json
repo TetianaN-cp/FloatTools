@@ -1,0 +1,22 @@
+{
+  "name": "TetianaN-cp/FloatTools",
+  "description": "Minimalist PHP module for precise float comparison.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "App\\Support\\": "src/Support/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Tetiana N.",
+      "email": "alltanyan2@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  }
+}
+
+
