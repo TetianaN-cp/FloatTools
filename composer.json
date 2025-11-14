@@ -11,13 +11,14 @@
   "authors": [
     {
       "name": "Tetiana N.",
-      "email": "tetiana@example.com"
+      "email": "tetiana.n.dev@gmail.com"
     }
   ],
   "require": {
     "php": ">=7.4"
   }
 }
+
 
 
 
