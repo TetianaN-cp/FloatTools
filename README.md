@@ -16,22 +16,34 @@ FloatTools — precision-focused float comparison and normalization for PHP. Des
 
 ## Usage Examples
 
-	require_once 'FloatTools.php';
+	require_once 'vendor/autoload.php';
 
 	$ft = new FloatTools();
-	// Comparison
-	if ($ft->isEqual(0.1 + 0.2, 0.3)) {
-		echo "Equal within tolerance";
-	}
 
-	// Rounding
-	echo $ft->round(3.14159, 2); // 3.14
+	// Rounding example
+	echo "Rounding 3.14159 to 2 decimal places:<br>";
+	echo $ft->roundTo(3.14159, 2); // 3.14
+	echo "<br><br>";
+	
+	// Array normalization
+	echo "Normalizing array [0.2, 0.1, 100.1]:<br>";
+	print_r($ft->normalizeArray([0.2, 0.1, 100.1]));
+	echo "<br><br>";
+	
+	// Value presence
+	echo "Checking if 100.1 is in array:<br>";
+	echo $ft->inArray(100.1, [0.2, 0.1, 100.1]) ? 'Found' : 'Not found';
+	echo "<br><br>";
+	
+	// Key search
+	echo "Searching for 0.1 in array:<br>";
+	echo "Key: " . $ft->search(0.1, [0.2, 0.1, 100.1]);
+	echo "<br><br>";
 
-	// Normalization
-	echo $ft->normalize(75, 0, 100); // 0.75
+	// Logging example
+	echo "Logging comparison:<br>";
+	$ft->logComparison(0.1 + 0.2, 0.3, 0.0002);
 
-	// Logging
-	$ft->logComparison(0.1 + 0.2, 0.3, 'Sum comparison');
 
 ## Architecture
 
@@ -49,8 +61,11 @@ FloatTools — precision-focused float comparison and normalization for PHP. Des
 
 ## Installation
 
-	Simply include the file:
-	require_once 'FloatTools.php';
+	To use FloatTools in your project, make sure Composer dependencies are installed:
+		composer install
+
+	Then include Composer's autoloader and instantiate the class:
+		require_once 'vendor/autoload.php';
 
 ## Roadmap
 
