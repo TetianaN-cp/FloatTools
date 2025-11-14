@@ -58,6 +58,7 @@ FloatTools — precision-focused float comparison and normalization for PHP. Des
 	• README.md — documentation  
 	• examples.php — usage examples and tests  
 	• LICENSE — license terms (MIT)
+	• composer.json
 
 ## Installation
 
